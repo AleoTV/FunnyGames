@@ -5,4 +5,5 @@ branches:
 projects:
   FunnyGames:
     path: FunnyGames/
+    icon: FunnyGamss/Logo.png
 ...

@@ -9,7 +9,7 @@ use pocketmine\event\Listener;
  use pocketmine\Player;
 
 
- class Main extends PluginBase implements Listener {
+ class main extends PluginBase implements Listener {
  
     public function onEnable()
     {

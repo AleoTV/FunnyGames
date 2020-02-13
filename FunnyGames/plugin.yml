@@ -6,35 +6,35 @@ author: AleoTV
 load: STARTUP
 commands:
   tag:
-    description: §rSetzt die Zeit auf Tag.
-    usage: "/tag"
+    description: §rTo Set the time to day.
+    usage: "/day"
     permission: time.command
   nacht:
-    description: §rSetzt die Zeit auf Nach
-    usage: "/nacht"
+    description: §rTo Set the time to night
+    usage: "/night"
     permission: time.command
   gm0:
-    description: §r Setzt dich auf den Zuschauermodus
+    description: §rTo Set your gamemode survial
     usage: "/gm0"
     permission: gamemode.command
   gm2:
-    description: §rSetzt dich in den Abenteuermodus
+    description: §rTo Set your gamemode to adventure
     usage: "/gm2"
     permission: gamemode.command
   gm1:
-    description: §r Setzt dich in den Kreativ Modus
+    description: §rTo Set your gamemode to creative
     usage: "/gm1"
     permission: gamemode.command
   gm3:
-    description: §rSetzt dich in den gm3
+    description: §rTo Set your gamemode to spectator
     usage: "/gm3"
     permission: gamemode.command
   heal:
-    description: §rFüllt deine Herzen auf.
+    description: §rTo Set your heath full.
     usage: "/heal"
     permission: heal.command
   food:
-    description: §rFüllt deine Hungerleiste auf.
+    description: §rTo Set your Hunger full.
     usage: "/food"
     permission: food.command
 

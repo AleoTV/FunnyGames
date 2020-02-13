@@ -27,7 +27,7 @@ use pocketmine\event\Listener;
             if ($sender instanceof Player) {
                 if ($sender->hasPermission("time.command")) {
                     $sender->getLevel()->setTime(6000);
-                    $sender->sendMessage("§§l§fFunnyGames §8§l> §rYou have set the time to day");
+                    $sender->sendMessage("§l§fFunnyGames §8§l> §rYou have set the time to day");
                     return true;
                 } else {
                     $sender->sendMessage("§rYou have no permission");

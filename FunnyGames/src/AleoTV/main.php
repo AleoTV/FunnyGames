@@ -9,7 +9,7 @@ use pocketmine\event\Listener;
  use pocketmine\Player;
 
 
- class main extends PluginBase implements Listener {
+ class Main extends PluginBase implements Listener {
  
     public function onEnable()
     {
@@ -49,11 +49,11 @@ use pocketmine\event\Listener;
             }
             return true;
         }
-        if ($cmd->getName() == "gm0") {
+        if ($cmd->getName() == "gm 0") {
             if ($sender instanceof Player) {
                 if ($sender->hasPermission("gamemode.command")) {
                     $sender->setGamemode(0);
-                    $sender->sendMessage("§l§fFunnyGames §8§l> §rDu bist nun im gm0");
+                    $sender->sendMessage("§l§fFunnyGames §8§l> §r§rDein Spielmodus ist nun §cÜberleben" );
                 } else {
                     $sender->sendMessage("§cDu hast keine Rechte diesen Befehl zu benutzen");
                 }

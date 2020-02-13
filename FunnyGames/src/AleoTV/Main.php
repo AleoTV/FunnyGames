@@ -1,6 +1,6 @@
 <?php
 
-namespace AleoTV/Main;
+namespace AleoTV\Main;
 
 use pocketmine\event\Listener;
  use pocketmine\plugin\PluginBase;

@@ -10,7 +10,7 @@ commands:
     usage: "/tag"
     permission: time.command
   nacht:
-    description: §rSetzt die Zeit auf Nach.
+    description: §rSetzt die Zeit auf Nach
     usage: "/nacht"
     permission: time.command
   gm0:

@@ -1,8 +1,8 @@
---- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/AleoTV/FunnyGames/FunnyGames
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/AleoTV/FunnyGames
 build-by-default: true
 branches:
 - master
 projects:
   FunnyGames:
-    path: FunnyGames/
+    path: FunnyGames/FunnyGames/
 ...

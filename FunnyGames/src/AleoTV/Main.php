@@ -1,6 +1,6 @@
 <?php
 
-namespace AleoTV;
+namespace AleoTV\Main;
 
 use pocketmine\event\Listener;
  use pocketmine\plugin\PluginBase;
@@ -8,7 +8,7 @@ use pocketmine\event\Listener;
  use pocketmine\command\CommandSender;
  use pocketmine\Player;
 
-class Main extends PluginBase implements Listener {
+class main extends PluginBase implements Listener {
  
     public function onEnable()
     {

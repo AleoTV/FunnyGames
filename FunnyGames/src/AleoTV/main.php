@@ -12,7 +12,7 @@ class main extends PluginBase implements Listener {
  
     public function onEnable()
     {
-        $this->getLogger()->info("[FunnyGames] is online.");
+        $this->getLogger()->info(" is online.");
     }
 
     public $fts;

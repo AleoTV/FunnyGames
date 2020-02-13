@@ -3,4 +3,39 @@ main: AleoTV\main
 version: 1.0
 api: [3.0.0,4.0.0]
 author: AleoTV
+load: STARTUP
 commands:
+  tag:
+    description: §rSetzt die Zeit auf Tag.
+    usage: "/tag"
+    permission: time.command
+  nacht:
+    description: §rSetzt die Zeit auf Nach.
+    usage: "/nacht"
+    permission: time.command
+  gm0:
+    description: §r Setzt dich auf den Zuschauermodus
+    usage: "/gm0"
+    permission: gamemode.command
+  gm2:
+    description: §rSetzt dich in den Abenteuermodus
+    usage: "/gm2"
+    permission: gamemode.command
+  gm1:
+    description: §r Setzt dich in den Kreativ Modus
+    usage: "/gm1"
+    permission: gamemode.command
+  gm3:
+    description: §rSetzt dich in den gm3
+    usage: "/gm3"
+    permission: gamemode.command
+  heal:
+    description: §rFüllt deine Herzen auf.
+    usage: "/heal"
+    permission: heal.command
+  food:
+    description: §rFüllt deine Hungerleiste auf.
+    usage: "/food"
+    permission: food.command
+
+

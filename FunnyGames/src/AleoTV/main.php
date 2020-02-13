@@ -8,7 +8,7 @@ use pocketmine\event\Listener;
  use pocketmine\command\CommandSender;
  use pocketmine\Player;
 
-
+class main extends PluginBase implements Listener {
  
     public function onEnable()
     {
@@ -116,3 +116,5 @@ use pocketmine\event\Listener;
          }
         return true;
         }
+
+} 

@@ -1,6 +1,6 @@
 <?php
 
-namespace AleoTV;
+namespace AleoTV\FunnyGames;
 
 use pocketmine\event\Listener;
  use pocketmine\plugin\PluginBase;
@@ -13,7 +13,7 @@ use pocketmine\event\Listener;
  
     public function onEnable()
     {
-        $this->getLogger()->info("[FunnyGames] Aktiviert.");
+        $this->getLogger()->info("[FunnyGames] is online.");
     }
 
     public $fts;
@@ -23,39 +23,39 @@ use pocketmine\event\Listener;
         $fts = "[FunnyGames]";
         $this->fts = $fts;
 
-        if ($cmd->getName() == "tag") {
+        if ($cmd->getName() == "day") {
             if ($sender instanceof Player) {
                 if ($sender->hasPermission("time.command")) {
                     $sender->getLevel()->setTime(6000);
-                    $sender->sendMessage("§§l§fFunnyGames §8§l> §rDu hast Tag gemacht");
+                    $sender->sendMessage("§§l§fFunnyGames §8§l> §rYou have set the time to day");
                     return true;
                 } else {
-                    $sender->sendMessage("§rDu hast keine Rechte diesen Befehl zu benutzen");
+                    $sender->sendMessage("§rYou have no permission");
                     return true;
                 }
             }
             return true;
         }
-        if ($cmd->getName() == "nacht") {
+        if ($cmd->getName() == "night") {
             if ($sender instanceof Player) {
                 if ($sender->hasPermission("time.command")) {
                     $sender->getLevel()->setTime(16000);
-                    $sender->sendMessage("§l§fFunnyGames §8§l> §rDu hast Nacht gemacht");
+                    $sender->sendMessage("§l§fFunnyGames §8§l> §rYou have set the time to night");
                     return true;
                 } else {
-                    $sender->sendMessage("§cDu hast keine Rechte diesen Befehl zu benutzen");
+                    $sender->sendMessage("§cYou have no permissions for that");
                     return true;
                 }
             }
             return true;
         }
-        if ($cmd->getName() == "gm 0") {
+        if ($cmd->getName() == "gm0") {
             if ($sender instanceof Player) {
                 if ($sender->hasPermission("gamemode.command")) {
                     $sender->setGamemode(0);
-                    $sender->sendMessage("§l§fFunnyGames §8§l> §r§rDein Spielmodus ist nun §cÜberleben" );
+                    $sender->sendMessage("§l§fFunnyGames §8§l> §r§rYour Gamemode is Survial");
                 } else {
-                    $sender->sendMessage("§cDu hast keine Rechte diesen Befehl zu benutzen");
+                    $sender->sendMessage("§cYou have no permission for that");
                 }
             }
             return true;
@@ -64,9 +64,9 @@ use pocketmine\event\Listener;
             if ($sender instanceof Player) {
                 if ($sender->hasPermission("gamemode.command")) {
                     $sender->setGamemode(1);
-                    $sender->sendMessage("§l§fFunnyGames §8§l> §rDu bist nun im gm1");
+                    $sender->sendMessage("§l§fFunnyGames §8§l> §rYou gamemode is creative");
                 } else {
-                    $sender->sendMessage("§cDu hast keine Rechte diesen Befehl zu benutzen");
+                    $sender->sendMessage("§cYou have no permission for that");
                 }
             }
             return true;
@@ -75,9 +75,9 @@ use pocketmine\event\Listener;
             if ($sender instanceof Player) {
                 if ($sender->hasPermission("gamemode.command")) {
                     $sender->setGamemode(2);
-                    $sender->sendMessage("§l§fFunnyGames §8§l> §rDu bist nun im gm2");
+                    $sender->sendMessage("§l§fFunnyGames §8§l> §rYour gamemode is adventure");
                 } else {
-                    $sender->sendMessage("§cDu hast keine Rechte diesen Befehl zu benutzen");
+                    $sender->sendMessage("§cYou have no permission for that");
                 }
             }
             return true;
@@ -86,9 +86,9 @@ use pocketmine\event\Listener;
             if ($sender instanceof Player) {
                 if ($sender->hasPermission("heal.command")) {
                     $sender->setHealth(20);
-                    $sender->sendMessage("§l§fFunnyGames §8§l> §rDeine Herzen wurden gefüllt");
+                    $sender->sendMessage("§l§fFunnyGames §8§l> §rYou has Drink water and get Full live");
                 } else {
-                    $sender->sendMessage("§cDu hast keine Rechte diesen Befehl zu benutzen");
+                    $sender->sendMessage("§cYou have no permission for that");
                 }
             }
             return true;
@@ -97,9 +97,9 @@ use pocketmine\event\Listener;
             if ($sender instanceof Player) {
                 if ($sender->hasPermission("food.command")) {
                     $sender->setFood(20);
-                    $sender->sendMessage("§l§fFunnyGames §8§l> §rDeine Hungersleiste wurde gefüllt");
+                    $sender->sendMessage("§l§fFunnyGames §8§l> §rYou are eating fish and chips");
                 } else {
-                    $sender->sendMessage("§cDu hast keine Rechte diesen Befehl zu benutzen");
+                    $sender->sendMessage("§cYou have no permission for that");
                 }
             }
             return true;
@@ -108,9 +108,9 @@ use pocketmine\event\Listener;
             if ($sender instanceof Player) {
                 if ($sender->hasPermission("gamemode.command")) {
                     $sender->setGamemode(3);
-                    $sender->sendMessage("§l§fFunnyGames §8§l> §rDu bist nun im gm3");
+                    $sender->sendMessage("§l§fFunnyGames §8§l> §rYou gamemode is spectator");
                 } else {
-                    $sender->sendMessage("§cDu hast keine Rechte diesen Befehl zu benutzen");
+                    $sender->sendMessage("§cYou have no permission for that");
                 }
             }
             return true;

@@ -63,7 +63,7 @@ class FunnyGames extends PluginBase {
             if ($sender instanceof Player) {
                 if ($sender->hasPermission("gamemode.command")) {
                     $sender->setGamemode(1);
-                    $sender->sendMessage("§l§fFunnyGames §8§l> §rYou gamemode is creative");
+                    $sender->sendMessage("§l§fFunnyGames §8§l> §rDein Spielmodus ist nun §aKreativ");
                 } else {
                     $sender->sendMessage("§cYou have no permission for that");
                 }

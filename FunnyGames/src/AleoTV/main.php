@@ -48,7 +48,7 @@ class FunnyGames extends PluginBase {
             }
             return true;
         }
-        if ($cmd->getName() == "gm0") {
+        if ($cmd->getName() == "gm 0") {
             if ($sender instanceof Player) {
                 if ($sender->hasPermission("gamemode.command")) {
                     $sender->setGamemode(0);
@@ -59,7 +59,7 @@ class FunnyGames extends PluginBase {
             }
             return true;
         }
-        if ($cmd->getName() == "gm1") {
+        if ($cmd->getName() == "gm 1") {
             if ($sender instanceof Player) {
                 if ($sender->hasPermission("gamemode.command")) {
                     $sender->setGamemode(1);
@@ -70,7 +70,7 @@ class FunnyGames extends PluginBase {
             }
             return true;
         }
-        if ($cmd->getName() == "gm2") {
+        if ($cmd->getName() == "gm 2") {
             if ($sender instanceof Player) {
                 if ($sender->hasPermission("gamemode.command")) {
                     $sender->setGamemode(2);
@@ -103,11 +103,11 @@ class FunnyGames extends PluginBase {
             }
             return true;
         }
-        if ($cmd->getName() == "gm3") {
+        if ($cmd->getName() == "gm 3") {
             if ($sender instanceof Player) {
                 if ($sender->hasPermission("gamemode.command")) {
                     $sender->setGamemode(3);
-                    $sender->sendMessage("§l§fFunnyGames §8§l> §rYou gamemode is spectator");
+                    $sender->sendMessage("§l§fFunnyGames §8§l> §rDein Spielmodus ist nun §1Zuschauer");
                 } else {
                     $sender->sendMessage("§cYou have no permission for that");
                 }

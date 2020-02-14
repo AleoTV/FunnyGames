@@ -1,6 +1,6 @@
 <?php
 
-namespace AleoTV\FunnyGames;
+namespace AleoTV;
 
 use pocketmine\event\Listener;
  use pocketmine\plugin\PluginBase;
@@ -8,7 +8,7 @@ use pocketmine\event\Listener;
  use pocketmine\command\CommandSender;
  use pocketmine\Player;
 
-class FunnyGames extends PluginBase {
+class main extends PluginBase {
  
     public function onEnable()
     {

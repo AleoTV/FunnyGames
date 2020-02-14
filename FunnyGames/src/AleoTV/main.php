@@ -8,7 +8,7 @@ use pocketmine\event\Listener;
  use pocketmine\command\CommandSender;
  use pocketmine\Player;
 
-class FunnyGames extends PluginBase implements Listener {
+class FunnyGames extends PluginBase {
  
     public function onEnable()
     {

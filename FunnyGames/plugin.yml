@@ -5,6 +5,10 @@ api: [3.0.0,4.0.0]
 author: AleoTV
 load: STARTUP
 commands:
+  cb:
+    description: §cBald!!
+    usage: "cb"
+    permission: cb.teleport
   tag:
     description: §rTo Set the time to day.
     usage: "/day"

@@ -52,7 +52,7 @@ class FunnyGames extends PluginBase {
             if ($sender instanceof Player) {
                 if ($sender->hasPermission("gamemode.command")) {
                     $sender->setGamemode(0);
-                    $sender->sendMessage("§l§fFunnyGames §8§l> §r§rYour Gamemode is Survial");
+                    $sender->sendMessage("§l§fFunnyGames §8§l> §rDein Spielmodus ist nun §cÜberleben");
                 } else {
                     $sender->sendMessage("§cYou have no permission for that");
                 }
@@ -74,7 +74,7 @@ class FunnyGames extends PluginBase {
             if ($sender instanceof Player) {
                 if ($sender->hasPermission("gamemode.command")) {
                     $sender->setGamemode(2);
-                    $sender->sendMessage("§l§fFunnyGames §8§l> §rYour gamemode is adventure");
+                    $sender->sendMessage("§l§fFunnyGames §8§l> §rDein Spielmodus ist nun §4Abenteuer");
                 } else {
                     $sender->sendMessage("§cYou have no permission for that");
                 }

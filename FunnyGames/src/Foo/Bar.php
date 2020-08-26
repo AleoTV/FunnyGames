@@ -1,3 +1,3 @@
 <?php
 
-namespace: AleoTV/Main;
+namespace: AleoTV/main;
